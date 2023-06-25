@@ -59,10 +59,6 @@ void draw_ball()
     int x = 1 + (int)(rand() * (75 - 1 + 1.0) / (1.0 + RAND_MAX));
 }
 
-void check()
-{
-}
-
 void open_hole(cell_t card[5][5], int drawed_ball)
 {
     for (int i = 0; i < 5; i++)
@@ -75,6 +71,10 @@ void open_hole(cell_t card[5][5], int drawed_ball)
             }
         }
     }
+}
+
+void check()
+{
 }
 
 int main(void)
