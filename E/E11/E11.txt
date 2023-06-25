@@ -78,14 +78,31 @@ x=6 y=7が表示される
 （結果）
 x = 6,  y = 7
 （考察）
-これ
+関数my_funcはpという変数ではななくpのアドレスを受けとっている
+ため、pのメンバの値を変えることができている。
 
+（d）
+（予想）
+p[0].x = 6,   p[0].y = 7
+p[1].x = 8,   p[1].y = 9
+（結果）
+p[0].x = 6,   p[0].y = 7
+p[1].x = 8,   p[1].y = 9
+（考察）
+引数に配列を与えた場合はアドレスとして扱われるため、
+ポインタ変数として定義しなくてもpのメンバの値を変えられる。
 -----------------------------------------------
 (E11_5) 
 
 学習内容：
+球団の勝率を計算するプログラムを作成した。
 
 結果：
+Top team: Swallows
+Winning Percentage: 0.71
+Wins: 12
+Losses: 5
+Ties: 1
 
 習得した内容・反省・考察など：
 
@@ -102,8 +119,30 @@ x = 6,  y = 7
 (E11_7) 
 
 学習内容：
+N人の生徒のテストの点数を処理するプログラムを作成した。
 
 結果：
+Student No: 1005, English: 86, Math: 75, Science: 92, Total: 253
+Student No: 1012, English: 65, Math: 91, Science: 80, Total: 236
+Student No: 1043, English: 45, Math: 75, Science: 58, Total: 178
+Student No: 1173, English: 97, Math: 75, Science: 82, Total: 254
+Student No: 1224, English: 77, Math: 77, Science: 77, Total: 231
+Student No: 1397, English: 27, Math: 62, Science: 35, Total: 124
+Student No: 1500, English: 58, Math: 85, Science: 62, Total: 205
+Student No: 1734, English: 80, Math: 52, Science: 46, Total: 178
+Student No: 1888, English: 98, Math: 93, Science: 96, Total: 287
+Student No: 1920, English: 60, Math: 60, Science: 60, Total: 180
+Enter a student number: 1043
+Student No: 1043, English: 45, Math: 75, Science: 58, Total: 178
+
+Enter the minimum passing marks for each subject and the minimum total: 70 250
+Student No: 1005, English: 86, Math: 75, Science: 92, Total: 253
+Student No: 1173, English: 97, Math: 75, Science: 82, Total: 254
+Student No: 1224, English: 77, Math: 77, Science: 77, Total: 231
+Student No: 1888, English: 98, Math: 93, Science: 96, Total: 287
+
+Average English mark: 69.30, Average Math mark: 74.50, Average Science mark: 68.80
+Average English mark for passed students: 89.50, Average Math mark for passed students: 80.00, Average Science mark for passed students: 86.75
 
 習得した内容・反省・考察など：
 
@@ -118,7 +157,8 @@ x = 6,  y = 7
 
 -----------------------------------------------
 [E11] 全体に対する感想などを以下に記すこと．
-所要時間： （        ）時間
+今回は課題が重く大変でした。
+所要時間： （    ６    ）時間
 
 
 
