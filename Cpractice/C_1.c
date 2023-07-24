@@ -2,12 +2,16 @@
  
 int main(void)
 {
-  char a[10];
-  scanf("%s", a);
-  //print all
-  for(int i = 0; i < 10; i++)
+  for(int i=0; i<10; i++)
   {
-    printf("%c", a[i]);
+    for(int j=0; j<i; j++)
+    {
+      printf("O"); 
+    }
+    for(int j=0; j<10-i; j++)
+    {
+      printf("X"); 
+    }
+    printf("\n");
   }
-  return 0;
 }

@@ -27,7 +27,7 @@ int main(void) {
         }
     } 
 
-    printf("最も早いのは%2.1fで、最も遅いのは%2.1f", min, max);
+    printf("最も早いのは%2.1f秒で、最も遅いのは%2.1f秒\n", min, max);
     
     return 0;
 }

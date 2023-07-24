@@ -8,7 +8,7 @@ int main(void)
         int i;
 
         for (i = 0;i < 10;i++) {
-                printf("%d\n",rand()); 
+                printf("%d\n",1 + rand() % 6); 
         }
 
         return 0;

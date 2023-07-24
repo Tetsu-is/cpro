@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#define M 3
+#define M_ 3
 
 void print_array(double a[M][M]){
 

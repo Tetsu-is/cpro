@@ -30,7 +30,7 @@ int main( void )
         sum = 0;
         average = 0;
         for(int j = 0; j < M; j ++){
-            sum += a[i][j];
+            sum += a[j][i];
         }
         average = sum / M;
         printf("%d回目の試験の平均点は %4.2f \n", i, average); 
