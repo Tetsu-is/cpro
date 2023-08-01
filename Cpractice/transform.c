@@ -10,6 +10,7 @@ void transform(double vector[], double matrix[][3])
         sum = 0;
         for (int j = 0; j < 3; j++)
         {
+            
             sum += vector[j] * matrix[i][j];
         }
         result[i] = sum;

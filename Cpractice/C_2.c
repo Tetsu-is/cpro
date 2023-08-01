@@ -1,20 +1,20 @@
 #include <stdio.h>
+#include <math.h>
 
 int main(void)
 {
-    int n;
-    scanf("%d", &n);
-    for(int i=1; i<=n; i++)
+	int decimal = 5;
+    int binary[3]={0};
+    for(int i=0; i<3; i++)
     {
-        for(int j=0; j<n-i; j++)
-        {
-            printf("▪️");
-        }
-        for(int j=0; j<i; j++)
-        {
-            printf("▫️");
-        }
-        printf("\n");
+        int y = decimal%2;
+        decimal /=2;
+        binary[2-i]=y;
     }
+    for(int i=0;i<3;i++)
+    {
+        printf("%d",binary[i]);
+    }
+    printf("\n");
     return 0;
 }
